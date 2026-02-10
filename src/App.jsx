@@ -18,9 +18,9 @@ const App = () => {
            <NavBar />
            <Hero />
            <ProductViewer />
-           <Showcase />
-           <Performance />
-           <Features />
+           {/*<Showcase />*/}
+           {/*<Performance />*/}
+           {/*<Features />*/}
            <Highlights />
            <Footer />
        </main>
