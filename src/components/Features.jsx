@@ -101,8 +101,8 @@ const Features = () => {
             </Canvas>
 
             <div className='absolute inset-8'>
-                {features.map((feature, index) => (
-                    <div className={clsx('box', `box${index + 1}`, feature.styles)}>
+                {features.map((feature) => (
+                    <div key={feature.id} className={clsx('box', `box${feature.id}`, feature.styles)}>
                         <img src={feature.icon} alt={feature.highlight}/>
                         <p>
                             <span className='text-white'>{feature.highlight}</span>
