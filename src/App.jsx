@@ -4,6 +4,7 @@ import Hero from "./components/Hero.jsx";
 import NavBar from "./components/NavBar.jsx";
 import gsap from "gsap";
 import {ScrollTrigger} from "gsap/all";
+import Showcase from "./components/Showcase.jsx";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -13,6 +14,7 @@ const App = () => {
            <NavBar />
            <Hero />
            <ProductViewer />
+           <Showcase />
        </main>
     )
 }
