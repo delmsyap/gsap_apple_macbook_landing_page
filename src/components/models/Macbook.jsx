@@ -11,6 +11,12 @@ Title: macbook pro M3 16 inch 2024
 import React from 'react'
 import { useGLTF } from '@react-three/drei'
 
+/**
+ * Renders a MacBook 3D model as a Three.js group composed of meshes and materials.
+ *
+ * @param {Object} props - Props forwarded to the root <group> element.
+ * @returns {JSX.Element} A Three.js group containing the assembled MacBook meshes.
+ */
 export default function MacbookModel(props) {
   const { nodes, materials } = useGLTF('/models/macbook-transformed.glb')
   return (
