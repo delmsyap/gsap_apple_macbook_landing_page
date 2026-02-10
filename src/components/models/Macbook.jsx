@@ -14,6 +14,13 @@ import * as THREE from "three";
 import {noChangeParts} from "../../constants/index.js";
 import useMacbookStore from "../../store/index.js";
 
+/**
+ * Render a GLTF-based MacBook 3D model with dynamic part coloring and an optional video-textured screen.
+ *
+ * Applies the selected color from the global store to all mesh parts except those named in `noChangeParts`, and maps the store-provided texture to the laptop screen.
+ * @param {object} props - Props forwarded to the root <group> element.
+ * @returns {JSX.Element} A grouped set of meshes that compose the MacBook model. 
+ */
 export default function MacbookModel(props) {
     const { color, texture } = useMacbookStore();
   const { nodes, materials, scene } = useGLTF('/models/macbook-transformed.glb');
