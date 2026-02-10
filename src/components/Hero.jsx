@@ -17,9 +17,9 @@ const Hero = () => {
 
             <video ref={videoRef} src="/videos/hero.mp4" autoPlay muted playsInline={true} />
 
-            <button aria-label="Buy Macbook Pro">Buy</button>
+            <button aria-label="Buy Macbook Pro">Buy Now</button>
 
-            <p>From $1699 or $133/mo for 12 months</p>
+            <p>From ₱99,438.00 or ₱7,784.00/mo for 12 months</p>
         </section>
     )
 }
